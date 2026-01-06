@@ -390,6 +390,7 @@ export type Database = {
           created_at: string
           currency: string
           id: string
+          language_preference: string
           logo_url: string | null
           onboarding_completed: boolean
           reminder_low_credits: boolean
@@ -404,6 +405,7 @@ export type Database = {
           created_at?: string
           currency?: string
           id?: string
+          language_preference?: string
           logo_url?: string | null
           onboarding_completed?: boolean
           reminder_low_credits?: boolean
@@ -418,6 +420,7 @@ export type Database = {
           created_at?: string
           currency?: string
           id?: string
+          language_preference?: string
           logo_url?: string | null
           onboarding_completed?: boolean
           reminder_low_credits?: boolean

@@ -54,10 +54,11 @@ export function ClientFormDialog({ open, onOpenChange, client }: ClientFormDialo
         toast.success("Client updated");
       } else {
         await createClient.mutateAsync({
-          ...data,
+          full_name: data.full_name,
           email: data.email || null,
           phone: data.phone || null,
           notes: data.notes || null,
+          status: data.status,
         });
         toast.success("Client created");
       }
